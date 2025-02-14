@@ -7,7 +7,8 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-200">
-    <!-- Header Section -->
+    <section class="max-w-5xl mx-auto py-20">
+        <!-- Header Section -->
     <header class="bg-blue-500 text-white text-center py-12">
         <h1 class="text-4xl font-bold">Study MBBS Abroad</h1>
         <p>Get admission to toop medical universities abroad.</p>
@@ -16,7 +17,7 @@
 
     <!-- Why study MBBS Abroad -->
 
-    <section class="max-w-4xl mx-auto mt-12 p-6 bg-gray-50 shadow rounded">
+    <section class="max-w-md mx-auto mt-12 p-6 bg-gray-50 shadow rounded">
         <h2 class="text-2xl font-bold mb-4">Why study MBBS Abroad</h2>
         <ul class="list-disc pl-4 space-y-2">
             <li>Affordable tuition fees</li>
@@ -28,7 +29,7 @@
 
     <!-- Top Countries -->
 
-    <section class="max-w-5xl mx-auto mt-12 p-6 ">
+    <section class=" mt-12 py-6 ">
         <h2 class="text-2xl font-bold mb-4">Top Countries for MBBS</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             <p class="p-4 bg-white shadow rounded text-center">Russia</p>
@@ -44,7 +45,7 @@
 
     <!-- Admission Process -->
 
-    <section class="max-w-4xl mx-auto mt-12 p-6 bg-gray-50 shadow rounded">
+    <section class=" mt-12 p-6 bg-gray-50 shadow rounded">
         <h2 class="text-2xl font-bold mb-4">Admission Process & Eligibility</h2>
         <ol class="list-decimal pl-4 space-y-2">
             <li>Choose your preferred country</li>
@@ -52,6 +53,32 @@
             <li>Receive admission confirmation</li>
             <li>Apply for visa and travel</li>
         </ol>
+    </section>
+
+
+
+    <!-- Apply Form -->
+
+    <section class="max-w-md mx-auto mt-12 p-6 bg-green-800 text-white shadow rounded">
+        <h2 class="text-2xl font-bold mb-4">Apply Now</h2>
+        <form id="applyForm">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 mb-3 border border-gray-50 rounded text-gray-50" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 mb-3 border border-gray-50 rounded text-gray-50" required>
+            <input type="text" id="phone" placeholder="Your Phone" class="w-full p-2 mb-3  rounded border border-gray-50 text-gray-50 " required>
+            <select name="" id="country" class="w-full p-2 mb-3 rounded border border-gray-50 bg-gray-50 text-green-700" required>
+                <option value="">Select Country</option>
+                <option value="Russia">Russia </option>
+                <option value="Uzbekistan">Uzbekistan</option>
+                <option value="Kazakhastan">Kazakhastan</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                <option value="Egypt">Egypt</option>
+            </select>
+            <button type="submit" class="w-full bg-blue-600 p-2 border border-gray-50 rounded font-semibold">Submit</button>
+        </form>
+        </ol>
+    </section>
     </section>
 
 
