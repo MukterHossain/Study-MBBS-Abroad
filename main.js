@@ -1,7 +1,7 @@
 
 
 // Form Validation
-document.getElementById('applyForm').addEventListener('submit', function(event){
+document.getElementById('leadForm').addEventListener('submit', function(event){
     event.preventDefault();
     let name = document.getElementById('name').value.trim();
     let email = document.getElementById('email').value.trim();
